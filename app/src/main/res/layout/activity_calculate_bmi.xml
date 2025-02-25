@@ -19,26 +19,27 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:src="@drawable/home"
+            android:layout_width="280dp"
+            android:layout_height="450dp"
+            android:src="@drawable/chartbmi"
+
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/view"
             android:id="@+id/logo"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My_App"
+            android:text="view"
             android:textSize="40sp"
             android:fontFamily="sans-serif"
             android:textColor="@color/black"
             android:textStyle="bold"/>
 
-        <ProgressBar
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="20dp"
-            android:indeterminateTint="@color/white"/>
 
 
     </LinearLayout>

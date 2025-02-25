@@ -5,19 +5,26 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp"
-    android:background="@drawable/rrrq"
+    android:background="#ADEBB3"
 
 
 
 >
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/dot"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
 
+        />
     <TextView
         android:id="@+id/result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quiz Result"
+        android:text="IQ Result"
         android:textSize="24sp"
-        android:textColor="#fff200"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:padding="10dp" />
 
@@ -28,7 +35,7 @@
         android:layout_height="wrap_content"
         android:text="Your Score: 0 / 0"
         android:textSize="22sp"
-        android:textColor="#fff200"
+        android:textColor="@color/black"
         android:padding="10dp"
         android:textStyle="bold" />
 
