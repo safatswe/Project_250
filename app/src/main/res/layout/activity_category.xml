@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00897B">
+    android:background="#33B8A7">
     <ImageView
         android:layout_width="170dp"
         android:layout_height="170dp"
@@ -31,6 +31,22 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="170dp"
+        android:src="@drawable/mid"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="170dp"
+        android:src="@drawable/mid"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
 
     <!-- Colored Box (LinearLayout) -->
     <LinearLayout
@@ -63,7 +79,7 @@
             android:id="@+id/btn_quiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Give IQ Test..."
+            android:text="Give IQ Test!..."
             android:textSize="20sp"
             android:textStyle="italic"
             android:textColor="@color/black"
