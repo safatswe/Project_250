@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:padding="24dp"
     android:background="#00897B"
-
     tools:context=".MainActivity">
 
     <!-- Total Question TextView at the top center -->
@@ -22,15 +21,28 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"/>
 
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 20s"
+        android:textColor="#7C0A02"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/total_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
     <!-- Fixed Image in the middle below the total question -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_below="@id/total_question"
+        android:layout_below="@id/timer"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/view"
-        android:layout_marginTop="30dp"/>
+        android:src="@drawable/ri"
+        android:layout_marginTop="10dp"/>
 
     <!-- Question TextView in the center -->
     <TextView

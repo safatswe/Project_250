@@ -18,13 +18,13 @@ public class CategoryActivity extends AppCompatActivity {
         btnBMI = findViewById(R.id.btn_bmi);
         btnQuiz = findViewById(R.id.btn_quiz);
 
-        // Navigate to BMI Info Activity
+
         btnBMI.setOnClickListener(view -> {
             Intent intent = new Intent(CategoryActivity.this, splashBmi.class);
             startActivity(intent);
         });
 
-        // Navigate to Quiz Activity
+
         btnQuiz.setOnClickListener(view -> {
             Intent intent = new Intent(CategoryActivity.this, Splash_iq.class);
             startActivity(intent);

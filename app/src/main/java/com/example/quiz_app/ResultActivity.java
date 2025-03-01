@@ -19,21 +19,21 @@ public class ResultActivity extends AppCompatActivity {
         resultTextView = findViewById(R.id.result_text);
         restartButton = findViewById(R.id.btn_restart);
 
-        // Get score from Intent
+
         int score = getIntent().getIntExtra("SCORE", 0);
         int totalQuestions = getIntent().getIntExtra("TOTAL_QUESTIONS", 0);
 
-        // Display Score
+
         scoreTextView.setText("Your Score: " + score + " / " + totalQuestions);
 
-        // Display Result (Passed / Failed)
+
         if (score >= totalQuestions * 0.6) {
             resultTextView.setText("🎉 Congratulations! You Passed!");
         } else {
             resultTextView.setText("❌ Better Luck Next Time!");
         }
 
-        // Restart Button Click Listener
+
         restartButton.setOnClickListener(view -> {
             Intent intent = new Intent(ResultActivity.this, MainActivity.class);
             startActivity(intent);
