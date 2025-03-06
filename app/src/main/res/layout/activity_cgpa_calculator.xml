@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <!-- Button to Add Course -->
+    <Button
+        android:id="@+id/btnAddCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F47174 "
+        android:text="Add Course"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Container for Course Inputs -->
+    <LinearLayout
+        android:id="@+id/courseContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to Calculate GPA -->
+    <Button
+        android:id="@+id/btnCalculateGPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate GPA"
+        android:backgroundTint="#F47174"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Result TextView -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total CGPA: "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

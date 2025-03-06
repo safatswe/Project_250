@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Quiz_App"
         tools:targetApi="31">
         <activity
+            android:name=".CgpaCalculator"
+            android:exported="false" />
+        <activity
             android:name=".Calculate_BMI"
             android:exported="false" />
         <activity
@@ -21,9 +24,7 @@
         <activity
             android:name=".Splash_iq"
             android:exported="false" />
-        <activity
-            android:name=".spashiq"
-            android:exported="false" />
+
         <activity
             android:name=".CategoryActivity"
             android:exported="false" />

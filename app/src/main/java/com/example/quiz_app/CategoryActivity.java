@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    Button btnBMI, btnQuiz;
+    Button btnBMI, btnQuiz,btncg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,8 @@ public class CategoryActivity extends AppCompatActivity {
 
         btnBMI = findViewById(R.id.btn_bmi);
         btnQuiz = findViewById(R.id.btn_quiz);
+        btncg=findViewById(R.id.btn_cgpa);
+
 
 
         btnBMI.setOnClickListener(view -> {
@@ -27,6 +29,10 @@ public class CategoryActivity extends AppCompatActivity {
 
         btnQuiz.setOnClickListener(view -> {
             Intent intent = new Intent(CategoryActivity.this, Splash_iq.class);
+            startActivity(intent);
+        });
+        btncg.setOnClickListener(view -> {
+            Intent intent = new Intent(CategoryActivity.this, CgpaCalculator.class);
             startActivity(intent);
         });
     }
